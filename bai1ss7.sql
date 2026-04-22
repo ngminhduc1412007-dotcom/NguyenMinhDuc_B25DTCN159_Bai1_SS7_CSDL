@@ -5,10 +5,10 @@
 -- Chính điều đó khiến hệ thống bị lỗi và màn hình của kế toán hiển thị lỗi 
 
 -- Câu lệnh đúng
-SELECT title, price
-FROM Courses
-WHERE price IN (
-    SELECT price
-    FROM Courses
-    WHERE instructor_id = 5
+select title, price
+from courses
+where price in (
+    select price
+    from courses
+    where instructor_id = 5
 );
